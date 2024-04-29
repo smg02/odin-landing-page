@@ -7,16 +7,14 @@ ul {
     list-style-type: none;
     display: flex;
     gap: 25px;
+    align-items: center;
 }
-a {
+a,.seconday,button {
     text-decoration: none;
     color: #e5e7eb;
     font-size: 18px;
 }
-img {
-    width: 150px;
-    height: 150px;
-}
+
 body {
     display: flex;
     flex-direction: column;
@@ -25,12 +23,20 @@ body {
 .logo{
     color: #f9faf8;
     font-size: 24px;
+    font-weight: 100;
 }
-.center{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin: 20px 10vh 20px 10vh;
+.hero{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+button{
+    background-color: #3882f6;
+    font-size: 15px;
+    padding: 4px 24px;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 .header {
     display: flex;
@@ -41,6 +47,97 @@ body {
 .main{
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    background-color: #1f2937;
+    padding:50px 50px 80px 50px;
+}
+.text {
+    max-width: 550px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+img {
+    width: 250px;
+    height: 250px;
+    flex-grow: 0;
+    border-radius: 80px 15px;
+}
+
+.info-head{
+    padding-bottom: 50px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    text-transform: capitalize;
+    text-align: center;
+}
+.box{
+    text-align: center;
+    border: 3px solid #3882f6;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 130px;
+    color: #1f2937;
+}
+.container,.item{
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    flex-direction: column;
+    justify-items: center;
+}
+.item .text{
+    width: 150px;
+    text-align: center;
+}
+.rand{
+    margin: 50px;
+}
+
+.quote{
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-weight:lighter;
+    font-style: italic;
+    color: #1f2937;
+    padding: 100px 250px;
+}
+.quote-auth{
+    text-align: end;
+    font-weight: bold;
+}
+.blue{
+    max-width: 900px;
+    margin: 100px;
+    background-color: #3882f6;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    flex: 1;
+}
+.blue button{
+    border: 1px solid;
+    flex-grow: 0;
+}
+.head{
+    font-weight: bolder;
+}
+.action{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #1f2937;
+    color: #e5e7eb;
 }
